@@ -50,7 +50,7 @@ function Hotspot({ position, title, detail, badge }: HotspotProps) {
 
 export function TopWinHero3D() {
   const windowSashRef = useRef<THREE.Group>(null);
-  const handleLeverRef = useRef<THREE.Mesh>(null);
+  const handleLeverRef = useRef<THREE.Group>(null);
   const [isOpenSash, setIsOpenSash] = useState(true);
 
   useFrame((state, delta) => {
